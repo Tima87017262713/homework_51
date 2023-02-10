@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Article Create</title>
+</head>
+<body>
+<form>
+<h1>кот</h1>
+
+<img style="width: 300px;" src="https://cdnn21.img.ria.ru/images/47154/51/471545135_328:0:3048:1530_1920x0_80_0_0_34d7064bd98a536f2587e35faf7eefd8.jpg" >
+ <h3>Кот - {{name}}</h3>
+     <h3>Возраст 2</h3>
+     <h3>Уревень шястие 10</h3>
+    <h3>Уревень сытности 40</h3>
+
+
+    <div class="form_row">
+        <select>
+  <option>play</option>
+  <option>feed</option>
+  <option>make cat sleep</option>
+    <input type="submit" value="confirm">
+
+</select>
+
+    </div>
+
+
+</form>
+</body>
+</html>

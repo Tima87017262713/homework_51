@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Hello</title>
+</head>
+<body>
+<div class="container">
+    <form action="cat_stats" method="post">
+        {% csrf_token %}
+       <h1>Вас приветствует симулятор кота для начяло введите имя </h1>
+
+        <input type="text" name="name" >
+
+        <input type="submit">
+    </form>
+</div>
+</body>
+</html>
